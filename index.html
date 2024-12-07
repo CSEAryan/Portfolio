@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.3rem;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+           
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.5rem;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .leftSection {
+            font-size: 1.5 rem;
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn {
+            padding:12px ;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .leftSection .btn a{
+            list-style: none;
+            text-decoration: none;
+            color: white;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 90px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 2.2rem;
+            margin: 70px 0;
+        }
+
+        .rightSection img {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+        .text-grey{
+            color: grey;
+            font-size: 10px;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+        .secondSection{
+            max-width:80vw ;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .secondSection .box {
+            background: rgb(52, 6, 108);
+            width: 80vw;
+            height: 2px;
+            margin: 5px 0;
+            display: flex;
+        }
+        .secondSection .vertical
+        {
+            height: 100px;
+            width:1px;
+            background-color: white;
+            margin:  100px;
+        }
+        .image-top{
+            width: 100px;
+            top:50px;
+            left:20px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 90px;
+            color: gray;
+            width: 5000px;
+            font-size: 20px;
+            margin-left: 10px;
+
+        }
+        footer{
+            background-color: #141442;
+        }
+        .footer{
+            display: flex;
+            padding: 20px 12px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+            text-decoration: none;
+            color: white;
+        }
+        .footer ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .footer > div{
+            width:223px ;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+        }
+
+    </style>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aryan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My name is <span class="purple">Aryan</span>
+                <div>and i am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="aryanResume.pdf"> View Resume </a></button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="images/aryan.png" alt="">
+
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical"> 
+                    <img class="image-top" src="images/qspider.png"  alt="">
+                    <div class="vertical-title"></div>
+                        Data Analyst (2023)
+                    </div>
+                <div class="vertical-desc">
+                    Transformed raw data into meaningful insights and presented
+                    them to stake holders in an intuitive way. <br>
+                    Implemented advanced analytics techniques such as linear and 
+                    logistic regression to identify correlations and predict outcomes. <br>
+                    Created a dashboard that visually represented key business metrics in
+                    real-time, allowing for quick and informed decision-making by management. 
+                </div>
+                <div class="vertical"> 
+                    <img class="image-top" src="images/alfabeta.png"  alt="">
+                    <div class="vertical-title"></div>
+                        Data Handler (2024)
+                    </div>
+                <div class="vertical-desc">
+                     Researched new technologies and trends in the industry, resulting in improved
+                     processes and new ideas. <br>
+                     Created a marketing strategy for a new project, resulting in increased sales and market share. <br>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Connect with me</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="linkedin.com/in/aryan-thapa-8a450821a">LinkedIn</a></li>
+                    <br>
+                    <li><a href="https://github.com/CSEAryan">Github</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="footer-third">
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <br>
+                    <li><a href="">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.aryanporfolio.com  | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Data Scientist', 'Data Analyst', 'ML Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
